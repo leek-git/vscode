@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PngMergeHelper">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/11-tool/图片处理工具/pngMerge/PngMergeHelper.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

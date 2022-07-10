@@ -1,0 +1,154 @@
+/*
+直接写内容，不必写style
+*/
+/*重置样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* header */
+.header {
+    width: auto;
+    height: 60px;
+    /* border: 1px solid red; */
+}
+/* 左区域 */
+.header .Leftlink {
+    width: 474px;
+    height: 60px;
+    /* border: 1px solid black; */
+    float: left;
+    margin-left: 24px;
+
+}
+
+.header .Leftlink .table {
+    width: 474px;
+    height: 60px;
+    text-align:center left;
+    /* padding: 0px;
+    spacing: 0px; */
+    font-size: 13px;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: #5170EA;
+}
+/* 右区域 */
+.header .Rightlink {
+    width: 150px;
+    height: 59px;
+
+    /* border: 1px solid black; */
+    float: right;
+}
+
+.header .Rightlink .table {
+    width: 150px;
+    height: 59px;
+    text-align: center;
+    /* padding: 0px;
+    spacing: 0px; */
+    font-size: 13px;
+
+}
+
+#input1 {
+    height: 24px;
+    width: 48px;
+    background-color: #5170EA;
+    color: white;
+    border-top-left-radius: 5px;
+
+    border-top-right-radius: 5px;
+
+    border-bottom-left-radius: 5px;
+
+    border-bottom-right-radius: 5px;
+}
+
+/* banner */
+.banner {
+    width: auto;
+    height: 665px;
+    /* border: 1px solid blue; */
+}
+.banner .logo{
+    width: auto;
+    height: 100px;
+    /* border: 1px solid yellow; */
+    background: url(../images/logo.png) no-repeat center center;
+    background-size: 270px;
+
+}
+
+.banner form{
+    width: auto;
+    height: 46px;
+    text-align:center;
+    margin-top: 28px;
+    
+    
+}
+.banner .search{
+    width: 547px;
+    height: 43px;
+    
+    border-top-left-radius:10px; 
+    border-bottom-left-radius: 10px;
+    border: 2px solid #c5c7cd;
+}
+.banner .submit{
+    width: 108px;
+    height: 44px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    color: white;
+    font-size: 17px;
+    background-color: #5170EA;
+
+}
+
+
+
+/* tail */
+
+.tail{
+    width: auto;
+    height: 15px;
+    /* border: 1px solid greenyellow; */
+    font-size: 12px;
+    
+}
+.tail a:link{
+    color: #c5c7cd
+}
+/* a:visited{
+    color: black;
+}
+a:hover{
+    color: #5170EA;
+} */
+.tail ul{
+   margin-left: 90px;
+}
+.tail ul li{
+    padding: 10px;
+    float: left;
+    line-height: 39px;
+    margin-top: 7px;
+}

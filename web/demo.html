@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+    #以上代码告诉IE浏览器，无论是否用DTD声明文档标准，IE8/9都会以IE7引擎来渲染页面。
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    #以上代码告诉IE浏览器，IE8/9都会以IE8引擎来渲染页面。
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    #以上代码告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面。
+    <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
+    <meta http-equiv="X-UA-Compatible" content="IE=7,9">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    #以上代码IE=edge告诉IE使用最新的引擎渲染网页，chrome=1则可以激活Chrome Frame.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        <meta name="viewport"content="width=device-width, user-scalable=no, 
+        initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        标签是为了让手机浏览器访问的。
+        手机浏览器是把页面放在一个虚拟的“窗口”（viewport）中，通常这个虚拟的“窗口”（viewport）比屏幕宽，
+        这样就不用把每个网页挤到很小的窗口中（这样会破坏没有针对手机浏览器优化的网页的布局），
+        用户可以通过平移和缩放来看网页的不同部分。移动版的 Safari 浏览器最新引进了 viewport 这个 meta tag，
+        让网页开发者来控制 viewport 的大小和缩放，其他手机浏览器也基本支持。
+    -->
+    <title>Document</title>
+    <style>
+        p{
+            color:red;
+            /* font-family: '宋体'; */
+
+        }
+        div{
+            background-image: url('/images/demo.jpg');
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--
+    容器标签
+        1、容器级的标签可以简单的理解为能嵌套其它所有标签的标签。
+        2、常见容器级的标签: div h ul ol dl li dt dd ...。
+ 
+
+    文本标签
+        1、文本级的标签对应容器级标签，只能嵌套文字/图片/超链接的标签。
+        2、常见文本级的标签:span p buis strong em ins del ...。
+
+-->
+
+    <div id="container" style="width:500px">
+
+        <div id="header" style="background-color:#FFA500;">
+            <h1 style="margin-bottom:0;">主要的网页标题</h1>
+        </div>
+
+        <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+            <b>菜单</b><br>
+            HTML<br>
+            CSS<br>
+            JavaScript
+        </div>
+
+        <div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+            内容在这里</div>
+
+        <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+            版权 © runoob.com</div>
+
+    </div>
+    <form>
+        <input type="button" value="2">
+        <br>
+
+        First name: <input type="text" name="firstname"><br>
+        Last name: <input type="text" name="lastname">
+
+    </form>
+    <p style="font-family: '微软雅黑'; font: size 1px;">我是微软雅黑字体</p>
+    <p style="font-family: '宋体';">我是宋体</p>
+    <p style="font-family: 'webdings';">I`m</p>
+
+<div >
+<p>hahhahahha</p>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <p id="p"></p>
+    <form id="form1" method="get" target="https://abc.xyz/def/ghi">This is form</form>
+    <a id="a"></a>
+    <script>
+    document.getElementById("form1").method = "post";
+    
+    console.log(document.getElementById("form1").method);
+    </script>
+</body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>get element by id</title>
+</head>
+<body>
+    <a id="a1" class = "myName" href="https://www.google.com">Google</a>
+    <p id="p1">this is a text</p>
+    <script>
+
+        var myElement = document.getElementById("a1");
+        var myName = document.getElementsByClassName("myName")[0];
+        myName.innerText = "EduCoder";
+        myElement.href="https://www.educoder.net";
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>get element by name</title>
+    <link rel="stylesheet" href="/Users/leek/Downloads/首页-电子科技大学中山学院_files/swiper.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .out_border {
+            height: 25px;
+            width: 200px;
+            background-color: #ebebeb;
+            border-radius: 25px 25px;
+            border: 1px solid red
+            
+        }
+
+        .se {
+            position: relative;
+            margin: 0 5px;
+        }
+
+        #text {
+            position: absolute;
+            left: 10px;
+            background-color: #ebebeb;
+            outline-style: none;
+            height: 24px;
+            border: 0px;
+        }
+
+        #submit {
+            border-style: none;
+            position: absolute;
+            border-radius: 0;
+            height: 30px;
+            width: 30px;
+            padding: 0;
+            top: -4px;
+            right: 0;
+            z-index: 99;
+            background: url(./images/serach.jpg)no-repeat center;
+        }
+    </style>
+</head>
+
+<!-- <body>
+    <img src="" class="myName" />
+    <form class="myName" id="myForm"></form>
+    <div class="myName">This is quote</div>
+    <p class="myName">This is what you should get</p>
+    <script>
+        var myElement = document.getElementsByClassName("myName")[3];
+
+        myElement.innerText = "I changed the text";
+    </script>
+</body> -->
+
+<body>
+    <a id="a1" class="myName" href="https://www.google.com">Google</a>
+    <p id="p1">尝试点击下方红色方块</p>
+    <div>
+        <div onclick="al()" style="width: 35px; height: 30px;background-color: red;">
+
+        </div>
+        <br>
+        <div class="out_border">
+            <form class="se">
+                <input id="text" type="text">
+                <input id="submit" type='submit' value="">
+            </form>
+        </div>
+
+
+    </div>
+    <script>
+        var id;
+
+        function al() {
+            id = window.setTimeout(changeLink, 1000);
+        }
+
+        function changeLink() {
+            var myElement = document.getElementById("a1");
+            var myName = document.getElementsByClassName("myName")[0];
+            if (myName.innerText = "Google") {
+                myElement.href = "https://www.educoder.net";
+                myName.innerText = "EduCoder";
+                console.log("hahah")
+            } else if (myName.innerText = "EduCoder") {
+                myElement.href = "https://www.google.com";
+                myName.innerText = "Google";
+            }
+        }
+    </script>
+</body>
+
+</html>
