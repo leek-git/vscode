@@ -15,6 +15,6 @@ Docker Swarm     2019-7 阿里云宣布剔除Docker Swarm
 * 弹性伸缩
 * 负载均衡: IPVS
 
-###Kubernetes意义
+### Kubernetes意义
 
 
