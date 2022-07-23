@@ -1,0 +1,66 @@
+version: '3.3'
+services:
+    db:
+     image: mysql
+     container_name: "mysql_compose"
+     volumes:
+       - /root/lcc/mysql:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: admin@123
+       MYSQL_DATABASE: wordpress
+       MYSQL_USER: wordpress
+       MYSQL_PASSWORD: wordpress
+    wordpress:
+     depends_on:
+       - db 
+     image: wordpress:latest
+     container_name: "wordpress_compose"
+     volumes:
+       - /root/lcc/html:/var/www/html
+     ports:
+       - "80:80"
+     restart: always
+     environment:
+       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_USER: wordpress
+       WORDPRESS_DB_PASSWORD: wordpress
+       WORDPRESS_DB_NAME: wordpress
+    nginx:
+        image: nginx:latest
+        container_name: "nginx_compose"
+        restart: always
+        ports:
+            - "8080:80"
+            - "443:443"
+        environment:
+           - TZ=Asia/Shanghai
+        depends_on:
+           - "php"
+        volumes:
+           - "/root/lcc/nginx/conf.d:/etc/nginx/conf.d"
+           - "/root/lcc/html:/usr/share/nginx/html"
+           - "/root/lcc/nginx/log:/var/log/nginx"
+        networks:
+           - net-app
+    php:
+        image: php:7.4-fpm
+        container_name: "php_compose"
+        restart: always
+        ports:
+            - "9000:9000"
+        environment:
+            - TZ=Asia/Shanghai
+        volumes:
+            - "/root/lcc/html:/usr/share/nginx/html"
+        networks:
+           - net-app
+networks:
+    net-app: 
+volumes:
+    db_data: {}
+
+
+
+
+
